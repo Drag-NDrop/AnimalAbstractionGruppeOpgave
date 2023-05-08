@@ -9,10 +9,18 @@ namespace AnimalAbstraction.Models.SuperClasses
 {
     internal class Animal : LifeForm
     {
-        protected private int _age;
+        private int age;
         public Animal(byte gender, int age) : base(gender)
         {
             this.Gender = gender;
+        }
+
+        public int Age
+        {
+            get
+            {
+                return age;
+            }
         }
     }
 }
