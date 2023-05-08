@@ -1,0 +1,2 @@
+# AnimalAbstractionGruppeOpgave
+AnimalAbstractionGruppeOpgave
