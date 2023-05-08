@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AnimalAbstraction.Models.Classes
 {
-    internal class Snake
+    internal class Snake : Reptile
     {
-        public Snake() : base()
+        public Snake(bool coldBlooded, byte gender, int age) : base(coldBlooded,gender,age)
         {
             
         }

@@ -11,7 +11,7 @@ namespace AnimalAbstraction.Models.Classes
     {
         public Type Is { get; set; }
 
-        public Arachnid() : base()
+        public Arachnid(byte gender, int age) : base(gender, age)
         {
             Is = typeof(Arachnid);
         }

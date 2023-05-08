@@ -9,7 +9,7 @@ namespace AnimalAbstraction.Models.Classes
     internal class Spider : Arachnid
     {
         public bool IsSpindler { get; set; }
-        public Spider() : base()
+        public Spider(byte gender, int age) : base(gender, age)
         {
         
         }

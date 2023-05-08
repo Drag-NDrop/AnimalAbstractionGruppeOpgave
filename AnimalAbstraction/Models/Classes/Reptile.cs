@@ -11,7 +11,7 @@ namespace AnimalAbstraction.Models.Classes
     {
         public bool coldBlooded { get; set; }
 
-        public Reptile(bool coldBlooded) : base()
+        public Reptile(bool coldBlooded, byte gender, int age) : base(gender, age)
         {
             this.coldBlooded = coldBlooded;
         }
