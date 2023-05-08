@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AnimalAbstraction.Models.SuperClasses;
 
-namespace AnimalAbstraction.Models.SuperClasses
+namespace AnimalAbstraction.Models.Classes
 {
-    internal class Plant
+    internal class Plant : LifeForm
     {
-        public Plant() : base()
+
+        protected private string plantType = "";
+        public Plant(string plantType, byte gender) : base(gender)
         {
-            
+            this.plantType = plantType;
         }
     }
 }
