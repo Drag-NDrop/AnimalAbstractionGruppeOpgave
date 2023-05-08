@@ -16,3 +16,9 @@ p.writeCharacteristics();
 Fish gubbi = new Fish(1,10);
 Console.WriteLine(gubbi.GenderDescription);
 Console.WriteLine(gubbi.Age);
+
+
+Spider s = new Spider(1,10);
+Console.WriteLine("Does it spindle?: " + s.IsSpindler);
+Console.WriteLine("Age: " + s.Age);
+Console.WriteLine("Gender: " + s.GenderDescription);
