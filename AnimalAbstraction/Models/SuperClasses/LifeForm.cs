@@ -25,8 +25,6 @@ namespace AnimalAbstraction.Models.SuperClasses
             
         }
         
-        public int _size;
-
         public string Gender
         {
             get
