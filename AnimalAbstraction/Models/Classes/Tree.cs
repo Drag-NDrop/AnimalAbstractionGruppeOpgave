@@ -9,10 +9,17 @@ namespace AnimalAbstraction.Models.Classes
 {
     internal class Tree : Plant 
     {
-        public Tree() : base()
+        public Tree(string plantType, byte gender) : base(plantType, gender)
         {
-            
+            this.plantType = plantType;
+            this.Gender = gender;
         }
 
+        public void writeCharacteristics() {
+
+            Console.WriteLine("Gender: " + this.GenderDescription);
+            Console.WriteLine("Size: " + this._size);
+            Console.WriteLine("Type: " + this.plantType) ;
+        }
     }
 }

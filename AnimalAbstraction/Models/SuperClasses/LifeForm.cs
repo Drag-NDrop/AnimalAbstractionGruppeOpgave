@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,31 +9,36 @@ namespace AnimalAbstraction.Models.SuperClasses
 {
     public class LifeForm
     {
-        protected private string _gender;
-        public LifeForm(byte gender)
+       
+        public string? GenderDescription { get; set; }
+        public LifeForm(byte gbyte)
         {
-            switch (gender)
-            {
-                case 0: { this._gender = "Female"; }
-                    break;
-                case 1: { this._gender = "Male";  } 
-                    break;
-                case 2: { this._gender = "Non-Binary"; }
-                    break;
-                default:
-                    break;
-            }
-            
+            this.Gender = gbyte;
         }
        
-        public int _size;
+        protected private int _size;
 
-        public string Gender
+        public byte Gender
         {
-            get
+
+            set
             {
-                return Gender;
-            }
+                switch (value)
+                {
+                    case 0:
+                        { GenderDescription = "Female"; }
+                        break;
+                    case 1:
+                        { GenderDescription = "Male"; }
+                        break;
+                    case 2:
+                        { GenderDescription = "Non-Binary"; }
+                        break;
+                    default:
+                        break;
+                }
+
+            } 
         }
 
         public virtual void Seed() {
